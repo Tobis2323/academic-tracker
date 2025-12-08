@@ -1,0 +1,707 @@
+:root {
+  /* Minimalist Slate Palette */
+  --bg-app: #f8fafc;
+  /* Slate 50 */
+  --bg-panel: #ffffff;
+  /* White */
+
+  --text-primary: #1e293b;
+  /* Slate 800 */
+  --text-secondary: #64748b;
+  /* Slate 500 */
+  --text-light: #94a3b8;
+  /* Slate 400 */
+
+  --border-color: #e2e8f0;
+  /* Slate 200 */
+
+  /* Status Colors (Pastel/Soft) */
+  --status-approved-bg: #dcfce7;
+  /* Green 100 */
+  --status-approved-text: #166534;
+  /* Green 800 */
+
+  --status-regularized-bg: #dbeafe;
+  /* Blue 100 */
+  --status-regularized-text: #1e40af;
+  /* Blue 800 */
+
+  --status-locked-bg: #f1f5f9;
+  /* Slate 100 */
+  --status-locked-text: #94a3b8;
+  /* Slate 400 */
+
+  --primary-action: #0f172a;
+  /* Slate 900 */
+  --accent-color: #3b82f6;
+  /* Blue 500 */
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  text-align: center;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin: 2rem 0;
+  font-size: 1.8rem;
+  letter-spacing: -0.025em;
+}
+
+.container {
+  max-width: 1400px;
+  /* Increased for sidebar */
+  margin: 0 auto;
+}
+
+.main-layout {
+  display: flex;
+  gap: 0;
+  /* Remove gap so sidebar touches content area if desired, or keep it? User wants "same space". Let's keep gap but handle padding in content */
+  align-items: stretch;
+  /* Stretch sidebar to full height */
+  min-height: 100vh;
+  /* Ensure layout takes full height */
+}
+
+.content-area {
+  flex: 1;
+  min-width: 0;
+  /* Prevent overflow */
+  overflow-x: auto;
+  padding: 20px;
+  /* Moved padding here */
+}
+
+/* Sidebar Styles */
+/* Sidebar Styles */
+/* Sidebar Styles */
+.sidebar {
+  width: 25%;
+  min-width: 320px;
+  /* Slightly wider for better readability */
+  flex-shrink: 0;
+  background: var(--bg-panel);
+  padding: 24px;
+  /* More breathing room */
+  border-left: 1px solid var(--border-color);
+  min-height: 100vh;
+  position: relative;
+  overflow: visible;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease, min-width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.02);
+  /* Very subtle shadow */
+}
+
+.sidebar-content {
+  flex: 1;
+  width: 100%;
+}
+
+.sidebar.closed {
+  width: 0;
+  min-width: 0;
+  padding: 0;
+  overflow: visible;
+  border: none;
+  box-shadow: none;
+}
+
+.sidebar.closed .sidebar-content {
+  display: none;
+}
+
+/* Toggle Button (Tab) */
+.sidebar-toggle {
+  position: absolute;
+  left: -40px;
+  top: 24px;
+  width: 40px;
+  height: 40px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color);
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  /* Softer radius */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  box-shadow: -2px 2px 6px rgba(0, 0, 0, 0.04);
+  font-size: 1.2em;
+  padding: 0;
+  z-index: 100;
+  transition: all 0.2s ease;
+}
+
+.sidebar-toggle:hover {
+  background: #f8fafc;
+  color: var(--primary-action);
+}
+
+/* Reset Button Full Width */
+.btn-reset-full {
+  width: 100%;
+  background-color: transparent;
+  color: var(--text-light);
+  border: 1px solid var(--border-color);
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 20px;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.btn-reset-full:hover {
+  background-color: #fef2f2;
+  color: #ef4444;
+  border-color: #fecaca;
+}
+
+.sidebar-section {
+  margin-bottom: 32px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: none;
+  /* Remove underline */
+  padding-bottom: 0;
+}
+
+.sidebar-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  font-style: normal;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.sidebar-list li:last-child {
+  border-bottom: none;
+}
+
+.tag-year {
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  color: #555;
+}
+
+.elective-count {
+  color: #8e44ad;
+  font-weight: bold;
+  justify-content: center !important;
+}
+
+.empty-msg {
+  color: #999;
+  font-style: italic;
+  justify-content: center !important;
+}
+
+/* Priority Section */
+.priority-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.priority-name {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.priority-badge {
+  background: #e1f5fe;
+  color: #0288d1;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.85em;
+  white-space: nowrap;
+}
+
+@media (max-width: 1000px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: static;
+    max-height: none;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  /* Changed for border-radius on rows if needed, or keep collapse for clean lines */
+  border-spacing: 0;
+  margin-top: 20px;
+  background: transparent;
+  /* Remove white box background from table itself */
+  box-shadow: none;
+  /* Remove shadow */
+}
+
+th,
+td {
+  padding: 6px 8px;
+  /* Compact padding */
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  /* Smaller font */
+}
+
+th {
+  background-color: var(--bg-app);
+  /* Match app bg or white */
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--border-color);
+}
+
+tr:hover {
+  background-color: #f1f5f9;
+  /* Slate 100 on hover */
+}
+
+/* Status Styles - Minimalist Faint Row Colors */
+tr.cursada {
+  background-color: var(--status-regularized-bg);
+  /* Faint Blue */
+}
+
+tr.aprobada {
+  background-color: var(--status-approved-bg);
+  /* Faint Green */
+}
+
+tr.locked {
+  background-color: #fef2f2;
+  /* Faint Red */
+  color: var(--text-light);
+}
+
+tr.details-row {
+  background-color: transparent;
+}
+
+/* Keep the left border accent for extra clarity */
+tr td:first-child {
+  box-shadow: inset 4px 0 0 var(--text-light);
+  /* Default Gray Tab for pending */
+}
+
+tr.cursada td:first-child {
+  box-shadow: inset 4px 0 0 var(--status-regularized-text);
+}
+
+tr.aprobada td:first-child {
+  box-shadow: inset 4px 0 0 var(--status-approved-text);
+}
+
+tr.locked td:first-child {
+  box-shadow: inset 4px 0 0 #ef4444;
+  /* Red Tab for locked */
+}
+
+.missing-prereqs {
+  padding: 15px;
+  font-size: 0.9em;
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.missing-prereqs .label {
+  font-weight: 600;
+  margin-right: 8px;
+  color: var(--text-secondary);
+}
+
+.missing-prereqs .tag {
+  display: inline-block;
+  background: var(--status-locked-bg);
+  color: var(--status-locked-text);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 2px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.btn-info {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-left: 8px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.btn-info:hover {
+  color: var(--accent-color);
+  background-color: var(--status-regularized-bg);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #e0e0e0 !important;
+  color: #999 !important;
+  border-color: #ccc !important;
+}
+
+/* Specific column styles */
+.col-id {
+  width: 50px;
+  text-align: center;
+}
+
+.col-year {
+  width: 80px;
+  text-align: center;
+}
+
+.col-name {
+  min-width: 300px;
+}
+
+/* Increased width for subject name */
+.col-modality {
+  width: 100px;
+  text-align: center;
+}
+
+.col-prereqs {
+  width: 150px;
+}
+
+.col-actions {
+  width: 200px;
+  text-align: center;
+}
+
+.col-grade {
+  width: 100px;
+  text-align: center;
+}
+
+.col-info {
+  width: 40px;
+  text-align: center;
+}
+
+/* New column for expand button */
+.year-header {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.year-header-locked {
+  background-color: #c0392b;
+  /* Dark Red */
+}
+
+.year-header-pending {
+  background-color: #95a5a6;
+  /* Grey (Default) */
+}
+
+.year-header-regularized {
+  background-color: #2980b9;
+  /* Dark Blue */
+}
+
+.year-header-approved {
+  background-color: #27ae60;
+  /* Dark Green */
+}
+
+.electives-year-header {
+  background-color: #e0e0e0;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+
+/* Inputs and Buttons */
+input[type="number"] {
+  width: 50px;
+  padding: 6px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background: transparent;
+  text-align: center;
+  font-family: inherit;
+  color: var(--text-primary);
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+button {
+  padding: 2px 6px;
+  /* Compact button padding */
+  margin: 0 2px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  /* Smaller button font */
+  font-weight: 500;
+  transition: all 0.2s;
+  background: transparent;
+}
+
+button.btn-cursada {
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+button.btn-cursada:hover {
+  border-color: var(--status-regularized-text);
+  color: var(--status-regularized-text);
+}
+
+button.btn-cursada.active {
+  background-color: var(--status-regularized-bg);
+  color: var(--status-regularized-text);
+  border-color: transparent;
+}
+
+button.btn-cursada.active:hover {
+  border-color: var(--status-regularized-text);
+  /* Show border on hover */
+}
+
+button.btn-aprobada {
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+button.btn-aprobada:hover {
+  border-color: var(--status-approved-text);
+  color: var(--status-approved-text);
+}
+
+button.btn-aprobada.active {
+  background-color: var(--status-approved-bg);
+  color: var(--status-approved-text);
+  border-color: transparent;
+}
+
+button.btn-aprobada.active:hover {
+  border-color: var(--status-approved-text);
+  /* Show border on hover */
+}
+
+button.btn-add {
+  color: var(--accent-color);
+  border: 1px dashed var(--accent-color);
+}
+
+button.btn-add:hover {
+  background-color: #eff6ff;
+}
+
+button.btn-remove {
+  color: #ef4444;
+  border: 1px dashed #ef4444;
+  /* Dashed border like add button */
+}
+
+button.btn-remove:hover {
+  background-color: #fef2f2;
+  border-color: #ef4444;
+  /* Show border on hover */
+}
+
+/* Stats Section */
+.stats-section {
+  background: #f8fafc;
+  /* Subtle background for stats card */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 32px;
+  border: none;
+}
+
+.progress-container {
+  margin-bottom: 24px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--status-approved-text);
+  /* Dark green for progress */
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.chart-container {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 24px;
+}
+
+.pie-chart {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.extra-stats {
+  border-top: 1px solid var(--border-color);
+  padding-top: 16px;
+}
+
+.extra-stat-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.extra-stat-row strong {
+  color: var(--text-primary);
+}
+
+/* Year Headers */
+.year-header {
+  font-weight: 600;
+  text-align: center;
+  padding: 12px;
+  color: var(--text-primary);
+  background: #f1f5f9;
+  /* Default slate background */
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 0.9rem;
+  /* Removed uppercase and letter-spacing to match electives */
+}
+
+.year-header-locked {
+  background-color: #f1f5f9;
+  color: var(--text-light);
+}
+
+.year-header-pending {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+}
+
+.year-header-regularized {
+  background-color: var(--status-regularized-bg);
+  color: var(--status-regularized-text);
+}
+
+.year-header-approved {
+  background-color: var(--status-approved-bg);
+  color: var(--status-approved-text);
+}
+
+.electives-year-header {
+  background-color: #f8fafc;
+  font-weight: 600;
+  text-align: center;
+  padding: 12px;
+  color: var(--text-secondary);
+  border-radius: 8px;
+  margin: 10px 0;
+}
