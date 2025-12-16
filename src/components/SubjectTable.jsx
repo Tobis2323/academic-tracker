@@ -81,8 +81,16 @@ const SubjectTable = ({ subjects, userProgress, onUpdateProgress, onRemoveElecti
 
   const handleStatusChange = (subjectId, newStatus) => {
     const currentStatus = userProgress[subjectId]?.status;
-    const status = currentStatus === newStatus ? 'pending' : newStatus;
-    onUpdateProgress(subjectId, { ...userProgress[subjectId], status });
+    
+    if (currentStatus === newStatus) {
+      // If clicking the same status, remove the progress entirely
+      const newProgress = { ...userProgress };
+      delete newProgress[subjectId];
+      onUpdateProgress(subjectId, undefined, newProgress);
+    } else {
+      // Otherwise, set the new status
+      onUpdateProgress(subjectId, { ...userProgress[subjectId], status: newStatus });
+    }
   };
 
   const handleGradeChange = (subjectId, grade) => {
