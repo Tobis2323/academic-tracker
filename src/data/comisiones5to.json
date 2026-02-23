@@ -1,0 +1,418 @@
+{
+  "anio_lectivo": "5to Año",
+  "carrera": "Ingeniería en Sistemas de Información",
+  "comisiones": [
+    {
+      "id": "5K1",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "IA",
+          "nombre": "Inteligencia Artificial",
+          "tipo": "Anual",
+          "horarios": [
+            { "semestre": 1, "dia": "Lunes", "inicio": "08:00", "fin": "10:25" },
+            { "semestre": 2, "dia": "Lunes", "inicio": "08:00", "fin": "10:25" }
+          ],
+          "id": 31
+        },
+        {
+          "codigo": "Proy Fin",
+          "nombre": "Proyecto Final",
+          "horarios": [
+            { "semestre": 1, "dia": "Martes", "inicio": "08:00", "fin": "12:50" },
+            { "semestre": 2, "dia": "Martes", "inicio": "08:00", "fin": "12:50" }
+          ],
+          "id": 36
+        },
+        {
+          "codigo": "GG",
+          "nombre": "Gestión Gerencial",
+          "tipo": "Anual",
+          "horarios": [
+            { "semestre": 1, "dia": "Lunes", "inicio": "10:25", "fin": "12:50" },
+            { "semestre": 1, "dia": "Miércoles", "inicio": "08:00", "fin": "10:25" }
+          ],
+          "id": 34
+        },
+        {
+          "codigo": "SSI",
+          "nombre": "Seguridad en los Sistemas de Información",
+          "horarios": [
+            { "semestre": 1, "dia": "Jueves", "inicio": "08:00", "fin": "10:25" },
+            { "semestre": 1, "dia": "Viernes", "inicio": "08:00", "fin": "10:25" }
+          ],
+          "id": 35
+        },
+        {
+          "codigo": "SG",
+          "nombre": "Sistemas de Gestión",
+          "horarios": [
+            { "semestre": 1, "dia": "Miércoles", "inicio": "10:25", "fin": "14:00" },
+            { "semestre": 2, "dia": "Miércoles", "inicio": "10:25", "fin": "14:00" }
+          ],
+          "id": 33
+        },
+        {
+          "codigo": "SoftAb",
+          "nombre": "Ingeniería de Software de Fuentes Abiertas (Libre)",
+          "horarios": [
+            { "semestre": 1, "dia": "Sábado", "inicio": "08:00", "fin": "10:25" }
+          ],
+          "id": 119
+        },
+        {
+          "codigo": "CDD",
+          "nombre": "Ciencia de Datos",
+          "horarios": [
+            { "semestre": 2, "dia": "Jueves", "inicio": "08:00", "fin": "10:25" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "08:00", "fin": "10:25" }
+          ],
+          "id": 32
+        },
+        {
+          "codigo": "E1",
+          "nombre": "Electiva 1 (Gerenciamiento Estratégico, Decisiones en Escenarios Complejos)",
+          "horarios": [
+            { "semestre": 1, "dia": "Jueves", "inicio": "10:25", "fin": "12:50" },
+            { "semestre": 1, "dia": "Viernes", "inicio": "10:25", "fin": "12:50" }
+          ],
+          "id": 112,
+          "ids": [112, 115]
+        },
+        {
+          "codigo": "E2",
+          "nombre": "Electiva 2 (Auditoria SI-TI / Emprendimientos Tecnológicos)",
+          "horarios": [
+            { "semestre": 2, "dia": "Lunes", "inicio": "10:25", "fin": "12:50" },
+            { "semestre": 2, "dia": "Miércoles", "inicio": "08:00", "fin": "10:25" }
+          ],
+          "id": 111,
+          "ids": [111, 114]
+        },
+        {
+          "codigo": "E3",
+          "nombre": "Electiva 3 (Creatividad e Innovación / Consultoría en Negocios Digitales)",
+          "horarios": [
+            { "semestre": 2, "dia": "Jueves", "inicio": "10:25", "fin": "12:50" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "10:25", "fin": "12:50" }
+          ],
+          "id": 110,
+          "ids": [110, 113]
+        }
+      ]
+    },
+    {
+      "id": "5K2",
+      "turno": "Tarde",
+      "materias": [
+        {
+          "codigo": "SSI",
+          "nombre": "Seguridad en los Sistemas de Información",
+          "horarios": [
+            { "semestre": 1, "dia": "Lunes", "inicio": "13:15", "fin": "15:40" },
+            { "semestre": 1, "dia": "Viernes", "inicio": "13:15", "fin": "15:40" }
+          ],
+          "id": 35
+        },
+        {
+          "codigo": "IA",
+          "nombre": "Inteligencia Artificial",
+          "horarios": [
+            { "semestre": 1, "dia": "Lunes", "inicio": "15:40", "fin": "18:05" },
+            { "semestre": 2, "dia": "Lunes", "inicio": "15:40", "fin": "18:05" }
+          ],
+          "id": 31
+        },
+        {
+          "codigo": "Proy Fin",
+          "nombre": "Proyecto Final",
+          "horarios": [
+            { "semestre": 1, "dia": "Martes", "inicio": "13:15", "fin": "18:05" },
+            { "semestre": 2, "dia": "Martes", "inicio": "13:15", "fin": "18:05" }
+          ],
+          "id": 36
+        },
+        {
+          "codigo": "GG",
+          "nombre": "Gestión Gerencial",
+          "horarios": [
+            { "semestre": 1, "dia": "Miércoles", "inicio": "13:15", "fin": "15:40" },
+            { "semestre": 1, "dia": "Jueves", "inicio": "15:40", "fin": "18:05" }
+          ],
+          "id": 34
+        },
+        {
+          "codigo": "SG",
+          "nombre": "Sistemas de Gestión",
+          "horarios": [
+            { "semestre": 1, "dia": "Jueves", "inicio": "12:05", "fin": "15:40" },
+            { "semestre": 2, "dia": "Jueves", "inicio": "12:05", "fin": "15:40" }
+          ],
+          "id": 33
+        },
+        {
+          "codigo": "CDD",
+          "nombre": "Ciencia de Datos",
+          "horarios": [
+            { "semestre": 2, "dia": "Lunes", "inicio": "13:15", "fin": "15:40" },
+            { "semestre": 2, "dia": "Miércoles", "inicio": "15:40", "fin": "18:05" }
+          ],
+          "id": 32
+        },
+        {
+          "codigo": "E1",
+          "nombre": "Electiva 1 (Creatividad e Innovación / Gerenciamiento Estratégico)",
+          "horarios": [
+            { "semestre": 1, "dia": "Miércoles", "inicio": "15:40", "fin": "18:05" },
+            { "semestre": 1, "dia": "Viernes", "inicio": "15:40", "fin": "18:05" }
+          ],
+          "id": 110,
+          "ids": [110, 112]
+        },
+        {
+          "codigo": "E2",
+          "nombre": "Electiva 2 (Auditoria SI-TI )",
+          "horarios": [
+            { "semestre": 2, "dia": "Jueves", "inicio": "15:40", "fin": "18:05" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "15:40", "fin": "18:05" }
+          ],
+          "id": 111
+        },
+        {
+          "codigo": "E3",
+          "nombre": "Electiva 3 (Consultoría en Negocios Digitales/ Decisiones en Escenarios Complejos)",
+          "horarios": [
+            { "semestre": 2, "dia": "Miércoles", "inicio": "13:15", "fin": "15:40" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "13:15", "fin": "15:40" }
+          ],
+          "id": 113,
+          "ids": [113, 115]
+        },
+        {
+          "codigo": "E4",
+          "nombre": "Electivas (Integración de Aplicaciones en Entorno Web)",
+          "tipo": "Cuatrimestral (Electiva - Combinada)",
+          "horarios": [
+            { "semestre": 2, "dia": "Martes", "inicio": "15:40", "fin": "18:05" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "15:40", "fin": "18:05" }
+          ],
+          "id": 118
+        },
+        {
+          "codigo": "E5",
+          "nombre": "Electivas (Seguridad en el Desarrollo de Software)",
+          "tipo": "Cuatrimestral (Electiva - Combinada)",
+          "horarios": [
+            { "semestre": 2, "dia": "Miércoles", "inicio": "15:40", "fin": "18:05" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "13:15", "fin": "15:40" }
+          ],
+          "id": 117
+        }
+      ]
+    },
+    {
+      "id": "5K3",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "GG",
+          "nombre": "Gestión Gerencial",
+          "horarios": [
+            { "semestre": 1, "dia": "Lunes", "inicio": "18:15", "fin": "20:40" },
+            { "semestre": 1, "dia": "Jueves", "inicio": "17:20", "fin": "19:45" }
+          ],
+          "id": 34
+        },
+        {
+          "codigo": "Proy Fin",
+          "nombre": "Proyecto Final",
+          "horarios": [
+            { "semestre": 1, "dia": "Martes", "inicio": "18:15", "fin": "23:05" },
+            { "semestre": 2, "dia": "Martes", "inicio": "18:15", "fin": "23:05" }
+          ],
+          "id": 36
+        },
+        {
+          "codigo": "SSI",
+          "nombre": "Seguridad en los Sistemas de Información",
+          "horarios": [
+            { "semestre": 1, "dia": "Miércoles", "inicio": "18:15", "fin": "20:40" },
+            { "semestre": 1, "dia": "Viernes", "inicio": "18:15", "fin": "20:40" }
+          ],
+          "id": 35
+        },
+        {
+          "codigo": "IA",
+          "nombre": "Inteligencia Artificial",
+          "horarios": [
+            { "semestre": 1, "dia": "Miércoles", "inicio": "20:40", "fin": "23:05" },
+            { "semestre": 2, "dia": "Miércoles", "inicio": "20:40", "fin": "23:05" }
+          ],
+          "id": 31
+        },
+        {
+          "codigo": "SG",
+          "nombre": "Sistemas de Gestión",
+          "horarios": [
+            { "semestre": 1, "dia": "Jueves", "inicio": "19:55", "fin": "23:05" },
+            { "semestre": 2, "dia": "Jueves", "inicio": "19:55", "fin": "23:05" }
+          ],
+          "id": 33
+        },
+        {
+          "codigo": "E1",
+          "nombre": "Electiva 1 (Gerenciamiento Estratégico)",
+          "horarios": [
+            { "semestre": 1, "dia": "Lunes", "inicio": "20:40", "fin": "23:05" },
+            { "semestre": 1, "dia": "Viernes", "inicio": "20:40", "fin": "23:05" }
+          ],
+          "id": 112
+        },
+        {
+          "codigo": "E2",
+          "nombre": "Electiva 2 (Emprendimientos Tecnológicos / Testing de Software)",
+          "horarios": [
+            { "semestre": 2, "dia": "Lunes", "inicio": "20:40", "fin": "23:05" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "18:15", "fin": "20:40" }
+          ],
+          "id": 114,
+          "ids": [114, 116]
+        },
+        {
+          "codigo": "E3",
+          "nombre": "Electiva 3 (Decisiones en Escenarios Complejos / Desarrollo con Tecnologías Blockchain)",
+          "horarios": [
+            { "semestre": 2, "dia": "Lunes", "inicio": "18:15", "fin": "20:40" },
+            { "semestre": 2, "dia": "Jueves", "inicio": "17:20", "fin": "19:45" }
+          ],
+          "id": 115,
+          "ids": [115, 109]
+        },
+        {
+          "codigo": "CDD",
+          "nombre": "Ciencia de Datos",
+          "horarios": [
+            { "semestre": 2, "dia": "Miércoles", "inicio": "18:15", "fin": "20:40" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "20:40", "fin": "23:05" }
+          ],
+          "id": 32
+        }
+      ]
+    },
+    {
+      "id": "5K4",
+      "turno": "Noche - Contracuatrimestre",
+      "materias": [
+        {
+          "codigo": "GG",
+          "nombre": "Gestión Gerencial",
+          "horarios": [
+            { "semestre": 1, "dia": "Lunes", "inicio": "18:15", "fin": "20:40" },
+            { "semestre": 1, "dia": "Jueves", "inicio": "17:20", "fin": "19:45" }
+          ],
+          "id": 34
+        },
+        {
+          "codigo": "Proy Fin",
+          "nombre": "Proyecto Final",
+          "horarios": [
+            { "semestre": 1, "dia": "Martes", "inicio": "18:15", "fin": "23:05" },
+            { "semestre": 2, "dia": "Martes", "inicio": "18:15", "fin": "23:05" }
+          ],
+          "id": 36
+        },
+        {
+          "codigo": "CDD",
+          "nombre": "Ciencia de Datos",
+          "horarios": [
+            { "semestre": 1, "dia": "Miércoles", "inicio": "18:15", "fin": "20:40" },
+            { "semestre": 1, "dia": "Viernes", "inicio": "18:15", "fin": "20:40" }
+          ],
+          "id": 32
+        },
+        {
+          "codigo": "IA",
+          "nombre": "Inteligencia Artificial",
+          "horarios": [
+            { "semestre": 1, "dia": "Miércoles", "inicio": "20:40", "fin": "23:05" },
+            { "semestre": 2, "dia": "Miércoles", "inicio": "20:40", "fin": "23:05" }
+          ],
+          "id": 31
+        },
+        {
+          "codigo": "SG",
+          "nombre": "Sistemas de Gestión",
+          "horarios": [
+            { "semestre": 1, "dia": "Jueves", "inicio": "19:55", "fin": "23:05" },
+            { "semestre": 2, "dia": "Jueves", "inicio": "19:55", "fin": "23:05" }
+          ],
+          "id": 33
+        },
+        {
+          "codigo": "SSI",
+          "nombre": "Seguridad en los Sistemas de Información",
+          "horarios": [
+            { "semestre": 2, "dia": "Miércoles", "inicio": "18:15", "fin": "20:40" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "18:15", "fin": "20:40" }
+          ],
+          "id": 35
+        },
+        {
+          "codigo": "E1",
+          "nombre": "Electiva 1 (Emprendimientos Tecnológicos / Integración de Aplicaciones en Entorno Web)",
+          "horarios": [
+            { "semestre": 1, "dia": "Lunes", "inicio": "20:40", "fin": "23:05" },
+            { "semestre": 1, "dia": "Viernes", "inicio": "20:40", "fin": "23:05" }
+          ],
+          "id": 114,
+          "ids": [114, 118]
+        },
+        {
+          "codigo": "E2",
+          "nombre": "Electiva 2 (Integración de Aplicaciones en Entorno Web / Creatividad e Innovación)",
+          "horarios": [
+            { "semestre": 2, "dia": "Lunes", "inicio": "18:15", "fin": "20:40" },
+            { "semestre": 2, "dia": "Jueves", "inicio": "17:20", "fin": "19:45" }
+          ],
+          "id": 118,
+          "ids": [118, 110]
+        },
+        {
+          "codigo": "E3",
+          "nombre": "Electiva 3 (Consultoría en Negocios Digitales/ Decisiones en Escenarios Complejos)",
+          "horarios": [
+            { "semestre": 2, "dia": "Lunes", "inicio": "20:40", "fin": "23:05" },
+            { "semestre": 2, "dia": "Viernes", "inicio": "20:40", "fin": "23:05" }
+          ],
+          "id": 113,
+          "ids": [113, 115]
+        },
+        {
+          "codigo": "E4",
+          "nombre": "Electiva 4 (Seguridad en Desarrollo de Software)",
+          "horarios": [
+            { "semestre": 2, "dia": "Lunes", "inicio": "20:40", "fin": "23:05" },
+            { "semestre": 2, "dia": "Jueves", "inicio": "17:20", "fin": "19:45" }
+          ],
+          "id": 117
+        }
+      ]
+    },
+    {
+      "id": "5K5",
+      "turno": "Noche - Contracuatrimestre",
+      "materias": [
+        {
+          "codigo": "GG",
+          "nombre": "Gestión Gerencial",
+          "horarios": [
+            { "semestre": 2, "dia": "Lunes", "inicio": "18:15", "fin": "20:40" },
+            { "semestre": 2, "dia": "Jueves", "inicio": "18:15", "fin": "19:45" }
+          ],
+          "id": 34
+        }
+      ]
+    }
+  ]
+}

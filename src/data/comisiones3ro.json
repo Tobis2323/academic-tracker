@@ -1,0 +1,1280 @@
+{
+  "anio_lectivo": "3er Año",
+  "carrera": "Ingeniería en Sistemas de Información",
+  "comisiones": [
+    {
+      "id": "3K1",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "DSI",
+          "nombre": "Diseño de Sistemas de Información",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "10:25"
+            }
+          ],
+          "id": 23
+        },
+        {
+          "codigo": "COM",
+          "nombre": "Comunicación de Datos",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "10:25",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 21
+        },
+        {
+          "codigo": "Ingles II",
+          "nombre": "Inglés II",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            }
+          ],
+          "id": 12
+        },
+        {
+          "codigo": "BDA",
+          "nombre": "Base de Datos",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "09:40",
+              "fin": "12:50"
+            }
+          ],
+          "id": 19
+        },
+        {
+          "codigo": "DDS",
+          "nombre": "Desarrollo de Software",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "10:25",
+              "fin": "12:50"
+            }
+          ],
+          "id": 20
+        },
+        {
+          "codigo": "AN",
+          "nombre": "Análisis Numérico",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "10:25",
+              "fin": "12:50"
+            }
+          ],
+          "id": 22
+        },
+        {
+          "codigo": "ECO",
+          "nombre": "Economía",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "09:40",
+              "fin": "12:05"
+            }
+          ],
+          "id": 18
+        },
+        {
+          "codigo": "Elect",
+          "nombre": "Backend de Aplicaciones",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "11:10"
+            }
+          ],
+          "id": 101
+        }
+      ]
+    },
+    {
+      "id": "3K2",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "DSI",
+          "nombre": "Diseño de Sistemas de Información",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "10:25"
+            }
+          ],
+          "id": 23
+        },
+        {
+          "codigo": "COM",
+          "nombre": "Comunicación de Datos",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "10:25",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 21
+        },
+        {
+          "codigo": "Ingles II",
+          "nombre": "Inglés II",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "11:20",
+              "fin": "12:50"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "11:20",
+              "fin": "12:50"
+            }
+          ],
+          "id": 12
+        },
+        {
+          "codigo": "BDA",
+          "nombre": "Base de Datos",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "11:10"
+            }
+          ],
+          "id": 19
+        },
+        {
+          "codigo": "DDS",
+          "nombre": "Desarrollo de Software",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "10:25",
+              "fin": "12:50"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 20
+        },
+        {
+          "codigo": "AN",
+          "nombre": "Análisis Numérico",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            }
+          ],
+          "id": 22
+        },
+        {
+          "codigo": "ECO",
+          "nombre": "Economía",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "10:25",
+              "fin": "12:50"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "10:25",
+              "fin": "12:50"
+            }
+          ],
+          "id": 18
+        },
+        {
+          "codigo": "Elect",
+          "nombre": "Backend de Aplicaciones",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "10:25",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "11:10"
+            }
+          ],
+          "id": 101
+        }
+      ]
+    },
+    {
+      "id": "3K3",
+      "turno": "Tarde",
+      "materias": [
+        {
+          "codigo": "DSI",
+          "nombre": "Diseño de Sistemas de Información",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            }
+          ],
+          "id": 23
+        },
+        {
+          "codigo": "COM",
+          "nombre": "Comunicación de Datos",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "13:15",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "14:55",
+              "fin": "16:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "13:15",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "14:55",
+              "fin": "16:25"
+            }
+          ],
+          "id": 21
+        },
+        {
+          "codigo": "Ingles II",
+          "nombre": "Inglés II",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "16:35",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "16:35",
+              "fin": "18:05"
+            }
+          ],
+          "id": 12
+        },
+        {
+          "codigo": "BDA",
+          "nombre": "Base de Datos",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "14:55",
+              "fin": "18:05"
+            }
+          ],
+          "id": 19
+        },
+        {
+          "codigo": "DDS",
+          "nombre": "Desarrollo de Software",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            }
+          ],
+          "id": 20
+        },
+        {
+          "codigo": "AN",
+          "nombre": "Análisis Numérico",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "13:15",
+              "fin": "15:40"
+            }
+          ],
+          "id": 22
+        },
+        {
+          "codigo": "ECO",
+          "nombre": "Economía",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "15:40",
+              "fin": "18:05"
+            }
+          ],
+          "id": 18
+        },
+        {
+          "codigo": "Elect",
+          "nombre": "Backend de Aplicaciones",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            }
+          ],
+          "id": 101
+        }
+      ]
+    },
+    {
+      "id": "3K4",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "DSI",
+          "nombre": "Diseño de Sistemas de Información",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            }
+          ],
+          "id": 23
+        },
+        {
+          "codigo": "COM",
+          "nombre": "Comunicación de Datos",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 21
+        },
+        {
+          "codigo": "Ingles II",
+          "nombre": "Inglés II",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "18:15",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "18:15",
+              "fin": "19:45"
+            }
+          ],
+          "id": 12
+        },
+        {
+          "codigo": "BDA",
+          "nombre": "Base de Datos",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 19
+        },
+        {
+          "codigo": "DDS",
+          "nombre": "Desarrollo de Software",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "18:15",
+              "fin": "21:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "18:15",
+              "fin": "21:25"
+            }
+          ],
+          "id": 20
+        },
+        {
+          "codigo": "AN",
+          "nombre": "Análisis Numérico",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "18:15",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "21:25"
+            }
+          ],
+          "id": 22
+        },
+        {
+          "codigo": "ECO",
+          "nombre": "Economía",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "20:40",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "19:55",
+              "fin": "22:20"
+            }
+          ],
+          "id": 18
+        },
+        {
+          "codigo": "Elect",
+          "nombre": "Backend de Aplicaciones",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "20:40",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "20:40",
+              "fin": "23:05"
+            }
+          ],
+          "id": 101
+        }
+      ]
+    },
+    {
+      "id": "3K5",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "DSI",
+          "nombre": "Diseño de Sistemas de Información",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:45"
+            }
+          ],
+          "id": 23
+        },
+        {
+          "codigo": "COM",
+          "nombre": "Comunicación de Datos",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 21
+        },
+        {
+          "codigo": "Ingles II",
+          "nombre": "Inglés II",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "18:15",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "18:15",
+              "fin": "19:45"
+            }
+          ],
+          "id": 12
+        },
+        {
+          "codigo": "BDA",
+          "nombre": "Base de Datos",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 19
+        },
+        {
+          "codigo": "DDS",
+          "nombre": "Desarrollo de Software",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 20
+        },
+        {
+          "codigo": "AN",
+          "nombre": "Análisis Numérico",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            }
+          ],
+          "id": 22
+        },
+        {
+          "codigo": "ECO",
+          "nombre": "Economía",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "19:55",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "19:55",
+              "fin": "22:20"
+            }
+          ],
+          "id": 18
+        },
+        {
+          "codigo": "Elect",
+          "nombre": "Backend de Aplicaciones",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 99
+        }
+      ]
+    },
+    {
+      "id": "3K6",
+      "turno": "Noche - Contracuatrimestre",
+      "materias": [
+        {
+          "codigo": "DSI",
+          "nombre": "Diseño de Sistemas de Información",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "20:40",
+              "fin": "23:05"
+            }
+          ],
+          "id": 23
+        },
+        {
+          "codigo": "COM",
+          "nombre": "Comunicación de Datos",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "21:35",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "21:35",
+              "fin": "23:05"
+            }
+          ],
+          "id": 21
+        },
+        {
+          "codigo": "Ingles II",
+          "nombre": "Inglés II",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "13:15",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "13:15",
+              "fin": "14:45"
+            }
+          ],
+          "id": 12
+        },
+        {
+          "codigo": "AN",
+          "nombre": "Análisis Numérico",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "18:15",
+              "fin": "19:55"
+            }
+          ],
+          "id": 22
+        },
+        {
+          "codigo": "ECO",
+          "nombre": "Economía",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "19:55",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "19:00",
+              "fin": "21:25"
+            }
+          ],
+          "id": 18
+        },
+        {
+          "codigo": "DDS",
+          "nombre": "Desarrollo de Software",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "18:15",
+              "fin": "21:25"
+            }
+          ],
+          "id": 20
+        },
+        {
+          "codigo": "BDA",
+          "nombre": "Base de Datos",
+          "tipo": "Cuatrimestral",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 19
+        }
+      ]
+    },
+    {
+      "id": "3K7",
+      "turno": "Tarde - Contracuatrimestre",
+      "materias": [
+        {
+          "codigo": "DSI",
+          "nombre": "Diseño de Sistemas de Información",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "15:40",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "15:40",
+              "fin": "18:05"
+            }
+          ],
+          "id": 23
+        },
+        {
+          "codigo": "COM",
+          "nombre": "Comunicación de Datos",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "13:15",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "13:15",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            }
+          ],
+          "id": 21
+        },
+        {
+          "codigo": "Ingles II",
+          "nombre": "Inglés II",
+          "tipo": "Anual",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "11:20",
+              "fin": "12:50"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "11:20",
+              "fin": "12:50"
+            }
+          ],
+          "id": 12
+        },
+        {
+          "codigo": "AN",
+          "nombre": "Análisis Numérico",
+          "tipo": "Cuatrimestral (Contra)",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "13:15",
+              "fin": "15:40"
+            }
+          ],
+          "id": 22
+        },
+        {
+          "codigo": "ECO",
+          "nombre": "Economía",
+          "tipo": "Cuatrimestral (Contra)",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "14:55",
+              "fin": "17:20"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "14:00",
+              "fin": "16:25"
+            }
+          ],
+          "id": 18
+        },
+        {
+          "codigo": "DDS",
+          "nombre": "Desarrollo de Software",
+          "tipo": "Cuatrimestral (Contra)",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "14:55",
+              "fin": "18:05"
+            }
+          ],
+          "id": 20
+        },
+        {
+          "codigo": "BDA",
+          "nombre": "Base de Datos",
+          "tipo": "Cuatrimestral (Contra)",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "14:55",
+              "fin": "18:05"
+            }
+          ],
+          "id": 19
+        },
+        {
+          "codigo": "Elect",
+          "nombre": "Backend de Aplicaciones",
+          "tipo": "Cuatrimestral (Contra)",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "13:15",
+              "fin": "16:25"
+            }
+          ],
+          "id": 99
+        }
+      ]
+    }
+  ]
+}

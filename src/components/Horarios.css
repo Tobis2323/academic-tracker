@@ -1,0 +1,323 @@
+/* ============================================================
+   HORARIOS — Dark Mode
+   ============================================================ */
+
+.horarios-view {
+    padding: 20px 24px;
+    max-width: 100%;
+}
+
+.horarios-view h1 {
+    text-align: center;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin: 1rem 0 2rem;
+    font-size: 1.75rem;
+    letter-spacing: -0.025em;
+}
+
+/* === Controls === */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.controls label {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+}
+
+.comision-select {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-ground);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+    min-width: 200px;
+    outline: none;
+}
+
+.comision-select:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(138, 180, 248, 0.2);
+}
+
+.comision-select:hover {
+    border-color: var(--text-secondary);
+}
+
+/* === Calendar Grid Layout === */
+.calendars-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.calendar-container {
+    background: var(--bg-panel);
+    border-radius: 10px;
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.semester-title {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    letter-spacing: 0.01em;
+}
+
+/* === Calendar Grid === */
+.calendar-grid {
+    display: grid;
+    gap: 0;
+    min-height: 400px;
+}
+
+.time-column {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-subtle);
+}
+
+.time-header {
+    height: 40px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.time-label {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 8px;
+    font-size: 0.72rem;
+    color: var(--text-light);
+    border-bottom: 1px solid var(--border-subtle);
+    min-height: 40px;
+    padding-top: 4px;
+}
+
+.day-column {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--border-subtle);
+}
+
+.day-column:last-child {
+    border-right: none;
+}
+
+.day-header {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-app);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.day-content {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-slot {
+    flex: 1;
+    border-bottom: 1px solid var(--border-subtle);
+    min-height: 40px;
+}
+
+/* === Class Blocks === */
+.class-block {
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px 7px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.class-block:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    filter: brightness(1.1);
+}
+
+.class-code {
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: #1e293b;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.class-time {
+    font-size: 0.68rem;
+    color: #2d3748;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.class-comision {
+    font-size: 0.62rem;
+    color: rgba(30, 41, 59, 0.75);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 2px;
+    letter-spacing: 0.02em;
+}
+
+.class-name-sm {
+    font-size: 0.68rem;
+    line-height: 1.2;
+    color: #2d3748;
+    margin-top: 1px;
+}
+
+/* === Highlight Effects === */
+.class-block.dimmed {
+    opacity: 0.2;
+    filter: grayscale(0.7);
+    transition: all var(--transition-normal);
+}
+
+.class-block.highlighted {
+    opacity: 1;
+    z-index: 20;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    transform: scale(1.02);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/* === Legend === */
+.legend {
+    background: var(--bg-panel);
+    border-radius: 10px;
+    padding: 1.25rem;
+    border: 1px solid var(--border-color);
+    margin-top: 1.5rem;
+}
+
+.legend h4 {
+    margin: 0 0 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.legend-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.6rem;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.84rem;
+    color: var(--text-primary);
+}
+
+.legend-color {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+/* === View Mode Toggle === */
+.view-mode-toggle {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    background: var(--bg-panel);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.view-mode-toggle label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.view-mode-toggle input[type="radio"] {
+    cursor: pointer;
+    accent-color: var(--accent-color);
+    width: 14px;
+    height: 14px;
+}
+
+/* === Responsive === */
+@media (max-width: 1400px) {
+    .calendars-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .calendar-grid {
+        overflow-x: auto;
+    }
+
+    .class-code {
+        font-size: 0.72rem;
+    }
+
+    .class-time {
+        font-size: 0.62rem;
+    }
+
+    .day-header {
+        font-size: 0.72rem;
+    }
+
+    .time-label {
+        font-size: 0.68rem;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .view-mode-toggle {
+        justify-content: center;
+    }
+}

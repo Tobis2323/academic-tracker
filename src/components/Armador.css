@@ -1,0 +1,374 @@
+/* ============================================================
+   ARMADOR — Dark Mode
+   ============================================================ */
+
+.armador-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: calc(100vh - 64px);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.armador-container.sidebar-open {
+    flex-direction: column;
+}
+
+/* === Subject List Panel === */
+.sidebar-armador {
+    width: 360px;
+    flex-shrink: 0;
+    background: var(--bg-panel);
+    border-radius: 10px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid var(--border-color);
+    overflow: visible;
+}
+
+.armador-container.sidebar-open .sidebar-armador {
+    width: 100%;
+}
+
+.sidebar-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sidebar-section h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0.5rem 0.25rem 0.4rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+}
+
+/* === Subject Pills === */
+.subject-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding-bottom: 6px;
+    align-items: center;
+    flex: 1;
+}
+
+.subject-item {
+    padding: 0.35rem 0.65rem;
+    background: var(--bg-ground);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+    font-size: 0.82rem;
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    position: relative;
+    color: var(--text-primary);
+}
+
+.subject-item span {
+    flex: 1;
+}
+
+.subject-item:hover {
+    background: var(--bg-hover);
+    border-color: var(--text-secondary);
+}
+
+.subject-item.active {
+    border-color: var(--accent-color);
+    background: var(--accent-bg);
+    color: var(--accent-color);
+}
+
+.subject-item.fixed-item {
+    opacity: 0.65;
+    cursor: default;
+    background: var(--status-approved-bg);
+    color: var(--status-approved-text);
+    border-color: rgba(52, 168, 83, 0.25);
+}
+
+/* === Remove Subject Button === */
+.remove-subject-btn {
+    background: none;
+    border: none;
+    color: var(--status-locked-text);
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 0 0.2rem;
+    line-height: 1;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.remove-subject-btn:hover {
+    color: var(--status-locked-text);
+    opacity: 1;
+    transform: scale(1.15);
+}
+
+.empty-subjects-msg {
+    color: var(--text-light);
+    font-size: 0.82rem;
+    font-style: italic;
+    padding: 0.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* === Fixed List (Saved Schedules panel) === */
+.fixed-list {
+    margin-top: 0;
+    border-top: none;
+    border-left: 1px solid var(--border-color);
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    overflow-y: auto;
+}
+
+.fixed-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.5rem;
+    background: var(--bg-ground);
+    margin-bottom: 0.25rem;
+    border-radius: 5px;
+    font-size: 0.78rem;
+    color: var(--text-primary);
+    border: 1px solid var(--border-subtle);
+}
+
+.fixed-item-row button {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 2px 4px;
+}
+
+.fixed-item-row button:hover {
+    color: var(--status-locked-text);
+}
+
+/* === Calendar Area === */
+.calendar-area {
+    flex: 1;
+    background: var(--bg-panel);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    overflow-y: auto;
+    padding: 0.5rem;
+    position: relative;
+}
+
+/* === Armador-specific Horarios overrides (compact) === */
+.armador-container .time-label {
+    min-height: 25px !important;
+    font-size: 0.7rem;
+    padding-top: 2px;
+}
+
+.armador-container .time-slot {
+    min-height: 25px !important;
+}
+
+.armador-container .day-header {
+    height: 30px;
+    font-size: 0.78rem;
+}
+
+.armador-container .time-header {
+    height: 30px;
+}
+
+.armador-container .semester-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem !important;
+    padding-bottom: 0.25rem;
+}
+
+.armador-container .class-code {
+    font-size: 0.7rem;
+    margin-bottom: 0;
+}
+
+.armador-container .class-name-sm {
+    font-size: 0.65rem;
+    line-height: 1;
+}
+
+.calendars-wrapper {
+    gap: 1rem !important;
+}
+
+@media (max-width: 1024px) {
+    .calendars-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === Saved Schedules === */
+.saved-schedules-container {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.armador-controls {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.armador-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-family: inherit;
+    transition: all var(--transition-fast);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.armador-btn:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.save-btn {
+    background: var(--bg-ground);
+    color: var(--text-primary);
+}
+
+.save-btn:not(:disabled):hover {
+    background: var(--bg-hover);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.clear-btn {
+    background: rgba(234, 67, 53, 0.08);
+    color: var(--status-locked-text);
+    border-color: rgba(234, 67, 53, 0.2);
+}
+
+.clear-btn:not(:disabled):hover {
+    background: rgba(234, 67, 53, 0.16);
+    border-color: var(--status-locked-text);
+}
+
+.saved-list-wrapper h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+}
+
+.saved-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.saved-schedule-item {
+    display: flex;
+    align-items: center;
+    padding: 0.65rem 0.75rem;
+    background: var(--bg-ground);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.saved-schedule-item:hover {
+    background: var(--bg-hover);
+    border-color: var(--accent-color);
+}
+
+.schedule-name {
+    flex: 1;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+}
+
+.schedule-info {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-right: 0.5rem;
+}
+
+.delete-schedule-btn {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.delete-schedule-btn:hover {
+    color: var(--status-locked-text);
+    background: rgba(234, 67, 53, 0.1);
+}
+
+/* === Possible Subject Items === */
+.possible-subject-item {
+    border-style: dashed !important;
+    border-color: var(--accent-color) !important;
+    color: var(--accent-color);
+    background: rgba(99, 102, 241, 0.06) !important;
+    opacity: 0.85;
+}
+
+.possible-subject-item:hover {
+    background: rgba(99, 102, 241, 0.13) !important;
+    opacity: 1;
+}
+
+.possible-subject-item.active {
+    background: rgba(99, 102, 241, 0.18) !important;
+    opacity: 1;
+}
+
+/* === Possible Block (calendar) === */
+.class-block.possible-block {
+    border-style: dashed !important;
+}

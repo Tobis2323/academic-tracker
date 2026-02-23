@@ -202,7 +202,7 @@ function App() {
           ) : currentView === 'horarios' ? (
             <Horarios />
           ) : (
-            <Armador userProgress={userProgress} />
+            <Armador userProgress={userProgress} isSidebarOpen={isSidebarOpen} />
           )}
         </div>
         

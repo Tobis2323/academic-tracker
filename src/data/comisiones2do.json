@@ -1,0 +1,2527 @@
+{
+  "anio_lectivo": "2do Año",
+  "carrera": "Ingeniería en Sistemas de Información",
+  "comisiones": [
+    {
+      "id": "2K1",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "09:40",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "09:40",
+              "fin": "11:10"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "10:25",
+              "fin": "12:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "10:25",
+              "fin": "12:05"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "10:25",
+              "fin": "12:50"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "10:25",
+              "fin": "12:50"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "11:20",
+              "fin": "14:00"
+            }
+          ],
+          "id": 17
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 14
+        }
+      ]
+    },
+    {
+      "id": "2K2",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "12:05",
+              "fin": "14:00"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "11:20",
+              "fin": "14:00"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "11:10"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "10:25",
+              "fin": "12:50"
+            }
+          ],
+          "id": 17
+        },
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "09:40",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "10:25",
+              "fin": "12:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "09:40",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "10:25",
+              "fin": "12:05"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "8:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "11:10"
+            }
+          ],
+          "id": 14
+        }
+      ]
+    },
+    {
+      "id": "2K3",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "PYE",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "10:25",
+              "fin": "12:50"
+            }
+          ],
+          "id": 17
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "11:20",
+              "fin": "14:00"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "09:40",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "09:40",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "10:25",
+              "fin": "12:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "10:25",
+              "fin": "12:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 14
+        }
+      ]
+    },
+    {
+      "id": "2K4",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "09:40",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "09:40",
+              "fin": "11:10"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 14
+        },
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "09:40",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "09:40",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "10:25",
+              "fin": "12:50"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "10:25",
+              "fin": "12:50"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "11:20",
+              "fin": "14:00"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            }
+          ],
+          "id": 17
+        }
+      ]
+    },
+    {
+      "id": "2K5",
+      "turno": "Tarde",
+      "materias": [
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "12:05",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "13:15",
+              "fin": "16:25"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "12:05",
+              "fin": "14:00"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "14:00",
+              "fin": "16:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "14:00",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "14:00",
+              "fin": "16:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "14:00",
+              "fin": "15:40"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "16:35",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "16:35",
+              "fin": "18:05"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "15:40",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "15:40",
+              "fin": "18:05"
+            }
+          ],
+          "id": 17
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "14:55",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "13:15",
+              "fin": "16:25"
+            }
+          ],
+          "id": 14
+        }
+      ]
+    },
+    {
+      "id": "2K6",
+      "turno": "Tarde",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "14:55",
+              "fin": "18:05"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "14:00",
+              "fin": "16:25"
+            }
+          ],
+          "id": 17
+        },
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "13:15",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "15:40",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "13:15",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "15:40",
+              "fin": "18:05"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "14:55",
+              "fin": "16:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "15:40",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "14:55",
+              "fin": "16:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "15:40",
+              "fin": "18:05"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "14:55",
+              "fin": "18:05"
+            }
+          ],
+          "id": 14
+        }
+      ]
+    },
+    {
+      "id": "2K7",
+      "turno": "Tarde",
+      "materias": [
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "12:05",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "12:05",
+              "fin": "14:45"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "16:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "16:25"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "12:05",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "14:55",
+              "fin": "18:05"
+            }
+          ],
+          "id": 14
+        },
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "14:00",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "14:00",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "16:35",
+              "fin": "18:05"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "15:40",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "15:40",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "15:40",
+              "fin": "18:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "15:40",
+              "fin": "18:05"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "12:05",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "14:55",
+              "fin": "18:05"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "13:15",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "15:40",
+              "fin": "18:05"
+            }
+          ],
+          "id": 17
+        }
+      ]
+    },
+    {
+      "id": "2K8",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "20:40",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "20:40",
+              "fin": "23:05"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "17:20",
+              "fin": "19:45"
+            }
+          ],
+          "id": 17
+        },
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "18:15",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "21:35",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "18:15",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "21:35",
+              "fin": "23:05"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:00",
+              "fin": "21:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "19:55",
+              "fin": "21:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "19:00",
+              "fin": "21:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "19:55",
+              "fin": "21:25"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "20:40",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "21:35",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "20:40",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "21:35",
+              "fin": "23:05"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 14
+        }
+      ]
+    },
+    {
+      "id": "2K9",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "20:40",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "20:40",
+              "fin": "23:05"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "17:20",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:00",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "19:00",
+              "fin": "20:40"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "19:55",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "19:55",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "17:20",
+              "fin": "19:00"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "19:00",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "19:00",
+              "fin": "20:40"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "20:40",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "20:40",
+              "fin": "23:05"
+            }
+          ],
+          "id": 17
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "17:20",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 14
+        }
+      ]
+    },
+    {
+      "id": "2K10",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "17:20",
+              "fin": "19:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "17:20",
+              "fin": "19:00"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "17:20",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "17:20",
+              "fin": "19:45"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "19:00",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "20:40",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "19:00",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "20:40",
+              "fin": "23:05"
+            }
+          ],
+          "id": 10
+        },
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "18:15",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "19:00",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "18:15",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "19:00",
+              "fin": "20:40"
+            }
+          ],
+          "id": 9
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 14
+        },
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "23:05"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "20:40",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "20:40",
+              "fin": "23:05"
+            }
+          ],
+          "id": 17
+        }
+      ]
+    },
+    {
+      "id": "2K11",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "SOP",
+          "nombre": "Sistemas Operativos",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "12:05",
+              "fin": "14:00"
+            }
+          ],
+          "id": 15
+        },
+        {
+          "codigo": "SSL",
+          "nombre": "Sintaxis y Semántica de los Lenguajes",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 13
+        },
+        {
+          "codigo": "ASI",
+          "nombre": "Análisis de Sistemas de Información",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "10:25",
+              "fin": "12:50"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "10:25",
+              "fin": "12:50"
+            }
+          ],
+          "id": 16
+        },
+        {
+          "codigo": "EST",
+          "nombre": "Probabilidad y Estadística",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "11:20",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "11:20",
+              "fin": "14:00"
+            }
+          ],
+          "id": 17
+        },
+        {
+          "codigo": "PPR",
+          "nombre": "Paradigmas de Programación",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "11:10"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "10:25",
+              "fin": "14:00"
+            }
+          ],
+          "id": 14
+        }
+      ]
+    },
+    {
+      "id": "2R1",
+      "turno": "Tarde",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "13:15",
+              "fin": "14:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "14:55",
+              "fin": "18:15"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "12:30",
+              "fin": "15:40"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2R2",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "20:40",
+              "fin": "23:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Viernes",
+              "inicio": "19:00",
+              "fin": "22:30"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2R3",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "09:40",
+              "fin": "12:50"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "08:00",
+              "fin": "11:10"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2R4",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "18:15",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "20:40",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "19:55",
+              "fin": "21:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "21:35",
+              "fin": "23:05"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2R5",
+      "turno": "Tarde",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "13:15",
+              "fin": "17:20"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "13:15",
+              "fin": "17:20"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2V1",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "18:15",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Viernes",
+              "inicio": "18:15",
+              "fin": "21:25"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2D1",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "21:35",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "21:35",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "22:20"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2D2",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "09:30"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "09:40",
+              "fin": "12:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "09:40",
+              "fin": "12:05"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2D3",
+      "turno": "Tarde",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "13:15"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "12:05",
+              "fin": "13:15"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "13:15",
+              "fin": "15:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "13:15",
+              "fin": "15:40"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2D4",
+      "turno": "Mañana",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "08:00",
+              "fin": "10:25"
+            },
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "10:25",
+              "fin": "12:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "10:25",
+              "fin": "12:05"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2S1",
+      "turno": "Tarde",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "12:30",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "12:30",
+              "fin": "14:00"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "14:00",
+              "fin": "16:25"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "14:00",
+              "fin": "16:25"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2S2",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "17:30",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "17:30",
+              "fin": "19:45"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2Q1",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "20:40",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "20:40",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 1,
+              "dia": "Jueves",
+              "inicio": "17:30",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Jueves",
+              "inicio": "17:30",
+              "fin": "19:45"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2T1",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Lunes",
+              "inicio": "21:35",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 2,
+              "dia": "Lunes",
+              "inicio": "21:35",
+              "fin": "23:05"
+            },
+            {
+              "semestre": 1,
+              "dia": "Martes",
+              "inicio": "18:15",
+              "fin": "20:40"
+            },
+            {
+              "semestre": 2,
+              "dia": "Martes",
+              "inicio": "18:15",
+              "fin": "20:40"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "2C1",
+      "turno": "Noche",
+      "materias": [
+        {
+          "codigo": "FISII",
+          "nombre": "Física II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "18:15",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "18:15",
+              "fin": "19:45"
+            },
+            {
+              "semestre": 1,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "22:20"
+            },
+            {
+              "semestre": 2,
+              "dia": "Miércoles",
+              "inicio": "19:55",
+              "fin": "22:20"
+            }
+          ],
+          "id": 10
+        }
+      ]
+    },
+    {
+      "id": "1H9",
+      "turno": "Sábado Mañana",
+      "materias": [
+        {
+          "codigo": "AM2",
+          "nombre": "Análisis Matemático II",
+          "horarios": [
+            {
+              "semestre": 1,
+              "dia": "Sábado",
+              "inicio": "09:00",
+              "fin": "13:00"
+            }
+          ],
+          "id": 9
+        }
+      ]
+    }
+  ]
+}

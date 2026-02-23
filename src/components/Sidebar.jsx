@@ -150,7 +150,7 @@ const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, o
         title={isOpen ? "Ocultar Panel" : "Mostrar Panel"}
         style={{ fontSize: '1.2em' }} // Slightly larger for hamburger
       >
-        {isOpen ? '✕' : '☰'}
+        {isOpen ? '×' : '≡'}
       </button>
 
       <div className="sidebar-content">
@@ -231,7 +231,7 @@ const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, o
               <li key={s.id} className="priority-item">
                 <div className="priority-name">{s.name}</div>
                 <div className="priority-badge" title={`Habilita ${s.unlocksMandatory} obligatorias y ${s.unlocksElective} electivas`}>
-                  🔓 {s.unlocksCount} <span style={{fontSize: '0.8em', fontWeight: 'normal'}}>({s.unlocksMandatory} Ob. + {s.unlocksElective} El.)</span>
+                  +{s.unlocksCount} <span style={{fontSize: '0.8em', fontWeight: 'normal'}}>({s.unlocksMandatory} Ob. + {s.unlocksElective} El.)</span>
                 </div>
               </li>
             ))}
