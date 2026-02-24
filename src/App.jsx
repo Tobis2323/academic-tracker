@@ -5,9 +5,12 @@ import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
 import Horarios from './components/Horarios';
 import Armador from './components/Armador';
+import LoginPage from './components/LoginPage';
+import { AuthProvider, useAuth } from './context/AuthContext';
 import { subjects, electives } from './data/subjects';
 
-function App() {
+function AppContent() {
+  const { logout } = useAuth();
   // Load initial state from localStorage or default to empty object
   const [userProgress, setUserProgress] = useState(() => {
     const saved = localStorage.getItem('academicProgress');
@@ -174,27 +177,27 @@ function App() {
 
   return (
     <div>
-      <Navbar currentView={currentView} onViewChange={setCurrentView} />
+      <Navbar currentView={currentView} onViewChange={setCurrentView} onLogout={logout} />
       
       <div className="main-layout">
         <div className="content-area">
           {currentView === 'correlativas' ? (
             <>
-              <h1>Seguimiento Académico - Ingeniería en Sistemas</h1>
+              <h1>Academic Tracker - Ingeniería en Sistemas</h1>
               
               <SubjectTable 
                 subjects={displayedSubjects} 
                 userProgress={userProgress} 
                 onUpdateProgress={handleUpdateProgress}
                 onRemoveElective={handleRemoveElective}
-                allSubjects={[...subjects, ...electives]} // Pass all for prereq checking
+                allSubjects={[...subjects, ...electives]}
               />
 
               <ElectivesTable 
                 electives={electives}
                 activeElectives={activeElectives}
                 userProgress={userProgress}
-                subjects={[...subjects, ...electives]} // Pass all for prereq checking
+                subjects={[...subjects, ...electives]}
                 onAddElective={handleAddElective}
                 onRemoveElective={handleRemoveElective}
               />
@@ -218,6 +221,21 @@ function App() {
         />
       </div>
     </div>
+  );
+}
+
+function AppWithAuth() {
+  const { user } = useAuth();
+  if (user === undefined) return null; // loading
+  if (!user) return <LoginPage />;
+  return <AppContent />;
+}
+
+function App() {
+  return (
+    <AuthProvider>
+      <AppWithAuth />
+    </AuthProvider>
   );
 }
 

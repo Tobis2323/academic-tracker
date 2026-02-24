@@ -1,11 +1,13 @@
+import logoBg from '../img/logo-bg.png';
 import './Navbar.css';
 
-function Navbar({ currentView, onViewChange }) {
+function Navbar({ currentView, onViewChange, onLogout }) {
   return (
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-brand">
-          <h2 className="navbar-title">Seguimiento Académico</h2>
+          <img src={logoBg} alt="Logo" className="navbar-logo" />
+          <h2 className="navbar-title">Academic Tracker</h2>
         </div>
         <div className="navbar-links">
           <button
@@ -26,6 +28,11 @@ function Navbar({ currentView, onViewChange }) {
           >
             Armador
           </button>
+          {onLogout && (
+            <button className="nav-link logout-btn" onClick={onLogout} title="Cerrar sesión">
+              Salir
+            </button>
+          )}
         </div>
       </div>
     </nav>

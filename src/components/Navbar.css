@@ -30,10 +30,13 @@
     gap: 0.75rem;
 }
 
-.navbar-icon {
-    font-size: 1.4rem;
-    line-height: 1;
+.navbar-logo {
+    height: 42px;
+    width: 42px;
+    object-fit: contain;
+    border-radius: 6px;
 }
+
 
 .navbar-title {
     margin: 0;
@@ -79,6 +82,16 @@
 
 .nav-link.active:hover {
     background: var(--accent-bg-hover);
+}
+
+.nav-link.logout-btn {
+    margin-left: 0.5rem;
+    color: #f87171;
+}
+
+.nav-link.logout-btn:hover {
+    color: #fca5a5;
+    background: rgba(248, 113, 113, 0.1);
 }
 
 @media (max-width: 768px) {
