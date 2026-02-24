@@ -214,6 +214,7 @@ function App() {
           isOpen={isSidebarOpen}
           onToggle={() => setIsSidebarOpen(!isSidebarOpen)}
           onReset={handleReset}
+          currentView={currentView}
         />
       </div>
     </div>

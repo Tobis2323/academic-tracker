@@ -81,14 +81,15 @@ const Armador = ({ userProgress, isSidebarOpen }) => {
   const { availableMandatory, availableElectives } = useMemo(() => {
     const available = [...subjects, ...electives].filter(subject => {
       const progress = userProgress[subject.id];
-      if (progress?.status === 'approved' || progress?.status === 'regularized') {
+      // Exclude already done or currently attending
+      if (progress?.status === 'approved' || progress?.status === 'regularized' || progress?.status === 'attending') {
          return false; 
       }
 
       // Check prerequisites
       const missingRegular = subject.regularPrereqs.some(id => {
          const pStatus = userProgress[id]?.status;
-         return pStatus !== 'regularized' && pStatus !== 'approved';
+         return pStatus !== 'regularized' && pStatus !== 'approved' && pStatus !== 'attending';
       });
       if (missingRegular) return false;
 
@@ -101,7 +102,6 @@ const Armador = ({ userProgress, isSidebarOpen }) => {
       return true;
     });
 
-    // Split by checking which array they belong to
     const mandatory = available.filter(s => subjects.some(subj => subj.id === s.id)).sort((a, b) => a.name.localeCompare(b.name));
     const electivesOnly = available.filter(s => electives.some(elec => elec.id === s.id)).sort((a, b) => a.name.localeCompare(b.name));
 
@@ -162,13 +162,25 @@ const Armador = ({ userProgress, isSidebarOpen }) => {
     return all;
   }, []);
 
-  // Compute Possible Subjects: unlocked if fixedClasses subjects are passed
+  // Compute Possible Subjects: unlocked if fixedClasses subjects are regularized/approved,
+  // AND also if subjects marked as 'attending' (cursando) are treated as regularized
   const possibleSubjects = useMemo(() => {
     const allSubjects = [...subjects, ...electives];
     const fixedIds = fixedClasses.map(fc => fc.subjectId);
-    if (fixedIds.length === 0) return [];
 
+    // Build projected progress:
+    // - fixedClasses subjects → treated as regularized (if not already approved)
+    // - attending subjects → also treated as regularized
     const projectedProgress = { ...userProgress };
+
+    // Treat attending subjects as regularized in projection
+    Object.entries(userProgress).forEach(([id, prog]) => {
+      if (prog?.status === 'attending') {
+        projectedProgress[id] = { status: 'regularized' };
+      }
+    });
+
+    // Treat fixedClasses subjects as regularized (if not already approved)
     fixedIds.forEach(id => {
       const current = projectedProgress[id]?.status;
       if (current !== 'approved') {
@@ -176,9 +188,13 @@ const Armador = ({ userProgress, isSidebarOpen }) => {
       }
     });
 
+    // If there's nothing to project from, return empty
+    const hasProjection = fixedIds.length > 0 || Object.values(userProgress).some(p => p?.status === 'attending');
+    if (!hasProjection) return [];
+
     return allSubjects.filter(subject => {
       const realStatus = userProgress[subject.id]?.status;
-      if (realStatus === 'approved' || realStatus === 'regularized') return false;
+      if (realStatus === 'approved' || realStatus === 'regularized' || realStatus === 'attending') return false;
 
       const alreadyAvailable = [...availableMandatory, ...availableElectives].some(s => s.id === subject.id);
       if (alreadyAvailable) return false;
@@ -651,7 +667,8 @@ const Armador = ({ userProgress, isSidebarOpen }) => {
 
   return (
     <div className={`armador-container ${isSidebarOpen ? 'sidebar-open' : ''}`}>
-        {/* Calendars first (left side) */}
+    <div className="calendar-column">
+        {/* Calendar card */}
         <div className="calendar-area">
              <div className="calendars-wrapper" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
                 {[1, 2].map(semestre => {
@@ -687,48 +704,49 @@ const Armador = ({ userProgress, isSidebarOpen }) => {
                     );
                 })}
              </div>
-
-             {/* Saved Schedules Section */}
-             <div className="saved-schedules-container">
-                <div className="armador-controls">
-                    <button className="armador-btn save-btn" onClick={handleSaveSchedule} disabled={fixedClasses.length === 0}>
-                        Guardar Horario
-                    </button>
-                    <button className="armador-btn clear-btn" onClick={handleClearArmador} disabled={fixedClasses.length === 0}>
-                        Limpiar Armador
-                    </button>
-                </div>
-                
-                {savedSchedules.length > 0 && (
-                    <div className="saved-list-wrapper">
-                        <h3>Mis Horarios Guardados</h3>
-                        <div className="saved-list">
-                            {savedSchedules.map(schedule => (
-                                <div 
-                                    key={schedule.id} 
-                                    className="saved-schedule-item"
-                                    onClick={() => handleLoadSchedule(schedule)}
-                                    title="Cargar este horario"
-                                >
-                                    <span className="schedule-name">{schedule.name}</span>
-                                    <span className="schedule-info">{schedule.classes.length} materias</span>
-                                    <button 
-                                        className="delete-schedule-btn"
-                                        onClick={(e) => handleDeleteSavedSchedule(schedule.id, e)}
-                                        title="Eliminar horario guardado"
-                                    >
-                                        ×
-                                    </button>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                )}
-             </div>
         </div>
+
+        {/* Controls */}
+        <div className="armador-controls">
+            <button className="armador-btn save-btn" onClick={handleSaveSchedule} disabled={fixedClasses.length === 0}>
+                Guardar Horario
+            </button>
+            <button className="armador-btn clear-btn" onClick={handleClearArmador} disabled={fixedClasses.length === 0}>
+                Limpiar Armador
+            </button>
+        </div>
+
+        {/* Saved Schedules — separate card below controls */}
+        {savedSchedules.length > 0 && (
+            <div className="saved-schedules-container">
+                <h3>Mis Horarios Guardados</h3>
+                <div className="saved-list">
+                    {savedSchedules.map(schedule => (
+                        <div
+                            key={schedule.id}
+                            className="saved-schedule-item"
+                            onClick={() => handleLoadSchedule(schedule)}
+                            title="Cargar este horario"
+                        >
+                            <span className="schedule-name">{schedule.name}</span>
+                            <span className="schedule-info">{schedule.classes.length} materias</span>
+                            <button
+                                className="delete-schedule-btn"
+                                onClick={(e) => handleDeleteSavedSchedule(schedule.id, e)}
+                                title="Eliminar horario guardado"
+                            >
+                                ×
+                            </button>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        )}
+    </div>
 
         {/* Subjects panel second (right side) */}
         <div className="sidebar-armador">
+
             <div className="sidebar-section">
                 <h3>Materias Obligatorias</h3>
                 <div className="subject-list">
@@ -869,7 +887,7 @@ const Armador = ({ userProgress, isSidebarOpen }) => {
                                                 justifyContent: 'space-between',
                                                 alignItems: 'center',
                                                 padding: '0.5rem 0.75rem',
-                                                background: isFixed ? 'var(--success-bg, #dcfce7)' : 'var(--bg-ground)',
+                                                background: isFixed ? 'var(--status-approved-bg)' : 'var(--bg-ground)',
                                                 border: `1px solid ${selectedSubjectId === subj.id ? 'var(--accent-color)' : 'var(--border-color)'}`,
                                                 borderRadius: '4px',
                                                 cursor: isFixed ? 'default' : 'pointer',

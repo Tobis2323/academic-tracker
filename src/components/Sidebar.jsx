@@ -1,7 +1,7 @@
 import React from 'react';
 import { isLocked } from '../utils/prerequisites';
 
-const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, onToggle, onReset }) => {
+const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, onToggle, onReset, currentView }) => {
   const allSubjects = [...subjects, ...electives];
 
   // 1. Available to Take (Unlocked & Pending)
@@ -16,17 +16,17 @@ const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, o
     return !status && !locked; // Not started and not locked
   });
 
-  // Count available electives
-  const availableElectivesCount = electives.filter(subject => {
+  // All available electives (unlocked, not started — regardless of activeElectives)
+  const availableElectivesList = electives.filter(subject => {
     const status = userProgress[subject.id]?.status;
     const locked = isLocked(subject, userProgress, allSubjects);
-    const isAdded = activeElectives.includes(subject.id);
-    return !status && !locked && !isAdded; // Not started, not locked, not already added
-  }).length;
+    return !status && !locked;
+  });
 
-  // 2. Priority to Approve (Regularized -> Unlocks most subjects)
+  // 2. Priority to Approve (Regularized or Attending -> Unlocks most subjects)
   const regularizedSubjects = allSubjects.filter(subject => {
-    return userProgress[subject.id]?.status === 'regularized';
+    const s = userProgress[subject.id]?.status;
+    return s === 'regularized' || s === 'attending';
   });
 
   const priorityList = regularizedSubjects.map(subject => {
@@ -58,16 +58,14 @@ const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, o
 
   const approvedCount = Object.values(userProgress).filter(p => p.status === 'approved').length;
   const regularizedCount = Object.values(userProgress).filter(p => p.status === 'regularized').length;
-  
-  // Available count (already calculated as availableSubjects.length + availableElectivesCount)
-  // But for the chart we might want "Pending but Available" vs "Locked"
+  const attendingCount = Object.values(userProgress).filter(p => p.status === 'attending').length;
   
   // Re-calculate strictly for the chart based on the Total Subjects set
   const chartData = allSubjects.reduce((acc, subject) => {
     const isMandatory = subject.id < 100;
     const isAddedElective = activeElectives.includes(subject.id);
     
-    if (!isMandatory && !isAddedElective) return acc; // Skip unadded electives
+    if (!isMandatory && !isAddedElective) return acc;
 
     const status = userProgress[subject.id]?.status;
     
@@ -75,8 +73,9 @@ const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, o
       acc.approved++;
     } else if (status === 'regularized') {
       acc.regularized++;
+    } else if (status === 'attending') {
+      acc.attending++;
     } else {
-      // Pending
       const locked = isLocked(subject, userProgress, allSubjects);
       if (locked) {
         acc.locked++;
@@ -85,7 +84,7 @@ const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, o
       }
     }
     return acc;
-  }, { approved: 0, regularized: 0, available: 0, locked: 0 });
+  }, { approved: 0, regularized: 0, attending: 0, available: 0, locked: 0 });
 
   const progressPercentage = Math.round((chartData.approved / totalSubjects) * 100) || 0;
 
@@ -118,7 +117,8 @@ const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, o
   const renderPieChart = () => {
     const data = [
       { value: chartData.approved, color: '#2ecc71', label: 'Aprobadas' },
-      { value: chartData.regularized, color: '#3498db', label: 'Regularizadas' },
+      { value: chartData.regularized, color: '#f59e0b', label: 'Regularizadas' },
+      { value: chartData.attending, color: '#3b82f6', label: 'Cursando' },
       { value: chartData.available, color: '#95a5a6', label: 'Disponibles' },
       { value: chartData.locked, color: '#c0392b', label: 'Bloqueadas' },
     ];
@@ -156,34 +156,62 @@ const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, o
       <div className="sidebar-content">
         <div className="sidebar-section stats-section">
           <h3>Progreso de Carrera</h3>
-          
-          <div className="progress-container">
-            <div className="progress-bar">
-              <div className="progress-fill" style={{ width: `${progressPercentage}%` }}></div>
-            </div>
-            <div className="progress-text">{progressPercentage}% Completado</div>
-          </div>
 
-          <div className="chart-container">
-            {renderPieChart()}
-          </div>
+          {/* Compact donut + stat rows */}
+          <div style={{ display: 'flex', gap: '10px', alignItems: 'center', marginBottom: '10px' }}>
+            {/* Donut SVG */}
+            <svg viewBox="0 0 88 88" style={{ width: 72, height: 72, flexShrink: 0 }}>
+              {(() => {
+                const pieData = [
+                  { value: chartData.approved, color: '#2ecc71' },
+                  { value: chartData.regularized, color: '#f59e0b' },
+                  { value: chartData.attending, color: '#3b82f6' },
+                  { value: chartData.available + chartData.locked, color: '#2a2b2d' },
+                ];
+                const total = pieData.reduce((s, d) => s + d.value, 0);
+                if (total === 0) return null;
+                let angle = -90;
+                return pieData.map((d, i) => {
+                  if (d.value === 0) return null;
+                  const deg = (d.value / total) * 360;
+                  const r = 36, cx = 44, cy = 44;
+                  const toRad = a => (a * Math.PI) / 180;
+                  const x1 = cx + r * Math.cos(toRad(angle));
+                  const y1 = cy + r * Math.sin(toRad(angle));
+                  const x2 = cx + r * Math.cos(toRad(angle + deg));
+                  const y2 = cy + r * Math.sin(toRad(angle + deg));
+                  const large = deg > 180 ? 1 : 0;
+                  const path = `M${cx},${cy} L${x1},${y1} A${r},${r} 0 ${large},1 ${x2},${y2} Z`;
+                  angle += deg;
+                  return <path key={i} d={path} fill={d.color} />;
+                });
+              })()}
+              <circle cx="44" cy="44" r="22" fill="var(--bg-card)" />
+              <text x="44" y="48" textAnchor="middle" fill="var(--text-primary)" fontSize="11" fontWeight="700">{progressPercentage}%</text>
+            </svg>
 
-          <div className="stats-grid">
-            <div className="stat-item" style={{ color: '#2ecc71' }}>
-              <span className="stat-value">{chartData.approved}</span>
-              <span className="stat-label">Aprobadas</span>
-            </div>
-            <div className="stat-item" style={{ color: '#3498db' }}>
-              <span className="stat-value">{chartData.regularized}</span>
-              <span className="stat-label">Regularizadas</span>
-            </div>
-            <div className="stat-item" style={{ color: '#95a5a6' }}>
-              <span className="stat-value">{chartData.available}</span>
-              <span className="stat-label">Disponibles</span>
-            </div>
-            <div className="stat-item" style={{ color: '#c0392b' }}>
-              <span className="stat-value">{chartData.locked}</span>
-              <span className="stat-label">Bloqueadas</span>
+            {/* Stat rows */}
+            <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '5px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem' }}>
+                <span style={{ color: '#2ecc71' }}>Aprobadas</span>
+                <strong style={{ color: 'var(--text-primary)' }}>{chartData.approved}</strong>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem' }}>
+                <span style={{ color: '#8ab4f8' }}>Cursando</span>
+                <strong style={{ color: 'var(--text-primary)' }}>{chartData.attending}</strong>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem' }}>
+                <span style={{ color: '#f59e0b' }}>Regularizadas</span>
+                <strong style={{ color: 'var(--text-primary)' }}>{chartData.regularized}</strong>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem' }}>
+                <span style={{ color: '#e74c3c' }}>Bloqueadas</span>
+                <strong style={{ color: 'var(--text-primary)' }}>{chartData.locked}</strong>
+              </div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.78rem', borderTop: '1px solid var(--border-subtle)', paddingTop: '4px', marginTop: '2px' }}>
+                <span style={{ color: 'var(--text-secondary)' }}>Total oblig.</span>
+                <strong style={{ color: 'var(--text-primary)' }}>{totalSubjects}</strong>
+              </div>
             </div>
           </div>
 
@@ -196,29 +224,36 @@ const Sidebar = ({ subjects, electives, userProgress, activeElectives, isOpen, o
               <span>Créditos Electivas:</span>
               <strong style={{ color: '#8e44ad' }}>{totalCredits} / 20</strong>
             </div>
-            <div className="extra-stat-row">
-              <span>Total Materias:</span>
-              <strong>{totalSubjects}</strong>
-            </div>
           </div>
         </div>
+
 
         <div className="sidebar-section">
           <h3>Materias Disponibles</h3>
           <p className="sidebar-subtitle">Puedes cursar estas materias:</p>
           <ul className="sidebar-list">
-            {availableSubjects.map(s => (
+            {availableSubjects.filter(s => s.id < 100).map(s => (
               <li key={s.id}>
                 {s.name} <span className="tag-year">{s.year}º</span>
               </li>
             ))}
-            {availableElectivesCount > 0 && (
-              <li className="elective-count">
-                + {availableElectivesCount} Electivas disponibles
-              </li>
+            {availableSubjects.filter(s => s.id < 100).length === 0 && (
+              <li className="empty-msg">No hay materias obligatorias disponibles.</li>
             )}
-            {availableSubjects.length === 0 && availableElectivesCount === 0 && (
-              <li className="empty-msg">No hay materias disponibles por ahora.</li>
+          </ul>
+        </div>
+
+        <div className="sidebar-section">
+          <h3>Electivas Disponibles</h3>
+          <p className="sidebar-subtitle">Electivas que puedes cursar:</p>
+          <ul className="sidebar-list">
+            {availableElectivesList.map(s => (
+              <li key={s.id}>
+                {s.name} <span className="tag-year">{s.year}º</span>
+              </li>
+            ))}
+            {availableElectivesList.length === 0 && (
+              <li className="empty-msg">No hay electivas disponibles.</li>
             )}
           </ul>
         </div>

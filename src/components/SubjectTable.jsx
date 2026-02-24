@@ -45,6 +45,7 @@ const SubjectTable = ({ subjects, userProgress, onUpdateProgress, onRemoveElecti
     const progress = userProgress[subject.id];
     if (progress?.status === 'approved') return 'aprobada';
     if (progress?.status === 'regularized') return 'cursada';
+    if (progress?.status === 'attending') return 'cursando';
     if (isLocked(subject)) return 'locked';
     return '';
   };
@@ -52,6 +53,7 @@ const SubjectTable = ({ subjects, userProgress, onUpdateProgress, onRemoveElecti
   const getYearClass = (yearSubjects) => {
     let hasLocked = false;
     let hasPending = false;
+    let hasAttending = false;
     let hasRegularized = false;
     let allApproved = true;
 
@@ -61,8 +63,12 @@ const SubjectTable = ({ subjects, userProgress, onUpdateProgress, onRemoveElecti
       const locked = isLocked(subject);
 
       if (locked) hasLocked = true;
-      if (!status || (status !== 'regularized' && status !== 'approved')) {
+      if (!status || (status !== 'regularized' && status !== 'approved' && status !== 'attending')) {
         if (!locked) hasPending = true;
+        allApproved = false;
+      }
+      if (status === 'attending') {
+        hasAttending = true;
         allApproved = false;
       }
       if (status === 'regularized') {
@@ -71,10 +77,11 @@ const SubjectTable = ({ subjects, userProgress, onUpdateProgress, onRemoveElecti
       }
     });
 
-    if (hasLocked) return 'year-header-locked'; // Dark Red
-    if (hasPending) return 'year-header-pending'; // Grey (Default)
-    if (hasRegularized) return 'year-header-regularized'; // Dark Blue
-    if (allApproved && yearSubjects.length > 0) return 'year-header-approved'; // Dark Green
+    if (hasLocked) return 'year-header-locked';
+    if (hasPending) return 'year-header-pending';
+    if (hasAttending) return 'year-header-attending';
+    if (hasRegularized) return 'year-header-regularized';
+    if (allApproved && yearSubjects.length > 0) return 'year-header-approved';
     
     return 'year-header-pending';
   };
@@ -168,6 +175,14 @@ const SubjectTable = ({ subjects, userProgress, onUpdateProgress, onRemoveElecti
                         <td className="col-prereqs">{subject.regularPrereqs.join(', ') || '–'}</td>
                         <td className="col-prereqs">{subject.approvedPrereqs.join(', ') || '–'}</td>
                         <td className="col-actions">
+                          <button 
+                            className={`btn-attending ${userProgress[subject.id]?.status === 'attending' ? 'active' : ''}`}
+                            onClick={() => handleStatusChange(subject.id, 'attending')}
+                            disabled={locked}
+                            title={locked ? "No se puede cursar (faltan correlativas)" : "Marcar como Cursando"}
+                          >
+                            C
+                          </button>
                           <button 
                             className={`btn-cursada ${userProgress[subject.id]?.status === 'regularized' ? 'active' : ''}`}
                             onClick={() => handleStatusChange(subject.id, 'regularized')}
